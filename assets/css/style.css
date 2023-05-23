@@ -4,11 +4,13 @@
     margin: 0;
 }
 
+/* sets the font and background for website */
 body{
     background-color: #9ba87c;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* makes the header a flex container, and centers the items vertically and horizontally */
 header{
     background-color: #17330D;
     color: #fff;
@@ -17,6 +19,7 @@ header{
     align-items: center;
 }
 
+/* positions the title of the webpage and gives it a cool tilt */
 header h1{
     background-color: #30321C;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -28,13 +31,13 @@ header h1{
 }
 
 header nav{
-    float: right;
     padding: 2rem;
 }
 
+/* gets rid of the underline on the links, and gives them proper space */
 header nav a{
     font-size: 1.5rem;
-    text-decoration: underline;
+    text-decoration: none;
     color: #fff;
     background-color: #30321C;
     padding: 1rem;
@@ -42,22 +45,23 @@ header nav a{
     border: .1rem solid black;
 }
 
+/* when hovering over the nav links, the color will change to black and the border will be white */
 header nav a:hover{
     color: black;
     border: .1rem solid #fff;
 }
 
+/* adds the banner background image, makes it relative to contain the caption */
 .hero{
     height: 25rem;
-    width: 100%;
     position: relative;
     background-image: url(C:/users/Clean/bootcamp/Professional-Portfolio/assets/images/20180521_181724.jpg);
     background-position: center;
     background-size: cover;
 }
 
+/* decorates the caption and makes it absolute to stay in the corner of the banner image */
 .hero figcaption{
-    display: inline-block;
     padding: 1.3rem;
     border: .3rem solid #0f350d;
     transform: skew(350deg);
@@ -70,10 +74,7 @@ header nav a:hover{
     bottom: 1rem;
 }
 
-main section{
-    width: 100%;
-}
-
+/* Centers the sections and gives them an underline */
 .Section-head{
     text-align: center;
     background-color: #17330D;
@@ -82,6 +83,7 @@ main section{
     text-decoration: underline;
 }
 
+/* used for the About Me and Contact Info, makes positioning items easier and more responsive for tiny screens */
 .flex{
     display: flex;
     justify-content: center;
@@ -89,11 +91,11 @@ main section{
     flex-wrap: wrap;
 }
 
+/* adds style to the description box */
 .Description{
     font-size: 1.3rem;
     background-color: #fff;
     max-width: 40rem;
-    height: fit-content;
     margin: 2rem 2rem 2rem 2rem;
     padding: 1rem;
     border: .2rem solid #17330D;
@@ -101,19 +103,21 @@ main section{
     line-height: 2rem;
 }
 
+/* sizes the image and gives it a border */
 #prom{
     width: 25rem;
-    float: right;
     margin: 2rem;
     border: .2rem solid #17330D;
 }
 
+/* creates flex container for the Works section, .flex not used to make selecting easier to organize */
 .projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* sets size for the projects */
 .projects a{
     flex: 1 0 50%;
     margin: 1rem;
@@ -121,24 +125,27 @@ main section{
     max-width: 40%;
 }
 
+/* makes the first project the biggest, and prevents the other projects from being on the same row */
 .projects a:first-of-type{
     flex: 0 1 100%;
     max-width: 60%;
 }
 
+/* allows for specific placement of the caption */
 .p1{
     position: relative;
 }
 
+/* positions the caption on the bottom left */
 .p1 figcaption{
     background-color: #0f350d;
     color: #fff;
-    display: inline-block;
     position: absolute;
     bottom: 0;
     padding: 0.5rem;
 }
 
+/* the images for the projects - display:block for the caption and opacity ease-in to oppose the ease-out transition */
 .p1 img{
     width: 100%;
     display: block;
@@ -146,6 +153,7 @@ main section{
     transition: opacity .2s ease-in;
 }
 
+/* ease-out transition */
 .p1 img:hover{
     opacity: 1;
     transition: opacity .2s ease-out;
@@ -164,6 +172,7 @@ main section{
     text-decoration: none;
 }
 
+/* changes colors when hovering */
 #contact-links a:hover{
     color: black;
     border:.1rem solid #fff;
@@ -176,6 +185,7 @@ footer{
     background-color: #17330D;
 }
 
+/* turns header into a column when screen is <768px wide */
 @media screen and (max-width:768px ){
     header{
         flex-direction: column;
