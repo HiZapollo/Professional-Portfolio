@@ -55,7 +55,7 @@ header nav a:hover{
 .hero{
     height: 25rem;
     position: relative;
-    background-image: url(C:/users/Clean/bootcamp/Professional-Portfolio/assets/images/20180521_181724.jpg);
+    background-image: url(./images/20180521_181724.jpg);
     background-position: center;
     background-size: cover;
 }
