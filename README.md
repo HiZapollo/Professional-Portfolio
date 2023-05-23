@@ -14,7 +14,7 @@ N/A
 
 This website can be used to view any of my projects or can be used to contact me through my phone number, github, or instagram.
 
-![image of webpage](images\portfolio_web_pic.png)
+![image of webpage](images/portfolio web pic.png)
 
 [Webpage can be visited here.](https://hizapollo.github.io/Professional-Portfolio/)
 
