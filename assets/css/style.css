@@ -185,9 +185,23 @@ footer{
     background-color: #17330D;
 }
 
-/* turns header into a column when screen is <768px wide */
+/* turns header into a column when screen is <768px wide, navbar becomes vertical and easy to tap on a phone */
 @media screen and (max-width:768px ){
     header{
         flex-direction: column;
+    }
+    header nav{
+        display: grid;
+        text-align: center;
+        padding: 0
+    }
+    header nav a{
+        text-decoration: underline;
+        background: none;
+        border: none;
+        padding: .5rem;
+    }
+    header nav a:hover{
+        border: none;
     }
 }
